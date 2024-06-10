@@ -23,7 +23,7 @@ volatile bool tonePlaying = false; // Flag to indicate if a tone is currently pl
 void setup() {
     pinMode(SWITCH_PIN, INPUT_PULLUP); // Set the switch pin as input with internal pull-up resistor
     CircuitPlayground.begin(); // Initialize the Circuit Playground library
-    Serial.begin(9600); // Begin serial communication at 9600 baud rate
+    Serial.begin(9600); 
     randomSeed(analogRead(0)); // Seed the random number generator using an analog read
 }
 
